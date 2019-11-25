@@ -15,6 +15,16 @@
         <url-pattern>/next</url-pattern>  <!--url 映射-->
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>FirstServlet.templateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>  <!--这个和上面的要对应起来-->
+        <url-pattern>/hello</url-pattern>  <!--url 映射-->
+    </servlet-mapping>
+
+
     <!--没有写任何后缀的话默认会访问下面配置的index.html-->
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
