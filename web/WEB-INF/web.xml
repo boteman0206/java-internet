@@ -22,6 +22,10 @@
     <servlet-mapping>
         <servlet-name>servlet</servlet-name>  <!--这个和上面的要对应起来-->
         <url-pattern>/hello</url-pattern>  <!--url 映射-->
+        <!--<url-pattern>*.do</url-pattern>  &lt;!&ndash;url 映射&ndash;&gt;-->
+        <!--<url-pattern>/*</url-pattern>  &lt;!&ndash;url 映射&ndash;&gt;-->
+        <!--<url-pattern>/*</url-pattern>  &lt;!&ndash;url 万能url映射&ndash;&gt;-->
+        <!--<url-pattern>/user/hello</url-pattern>  &lt;!&ndash;url 可以加上前缀万能url映射&ndash;&gt;-->
     </servlet-mapping>
 
 
