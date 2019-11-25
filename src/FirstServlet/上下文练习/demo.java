@@ -17,6 +17,7 @@ public class demo extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext servletContext = this.getServletContext();
         Object name = servletContext.getAttribute("name");  // 获取值
+//        servletContext.removeAttribute("name"); //删除值
         System.out.println("name = " + name);
         System.out.println(servletContext);
     }
