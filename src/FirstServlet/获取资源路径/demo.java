@@ -16,5 +16,10 @@ public class demo extends HttpServlet {
         System.out.println(realPath);
         String realPath1 = this.getServletContext().getRealPath("web.xml");
         System.out.println(realPath1);
+
+        // TODO: 2019/11/27 解决乱码
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("utf-8");
+        resp.getWriter().write("我是特朗普， 我比谁都懂政治");
     }
 }
