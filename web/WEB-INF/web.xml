@@ -28,6 +28,15 @@
         <!--<url-pattern>/user/hello</url-pattern>  &lt;!&ndash;url 可以加上前缀万能url映射&ndash;&gt;-->
     </servlet-mapping>
 
+   <!--通过上下文对象获取全局的配置信息-->
+    <context-param>
+        <param-name>jack</param-name>
+        <param-value>上海</param-value>
+    </context-param>
+    <context-param>
+        <param-name>lucy</param-name>
+        <param-value>北京</param-value>
+    </context-param>
 
     <!--没有写任何后缀的话默认会访问下面配置的index.html-->
     <welcome-file-list>
