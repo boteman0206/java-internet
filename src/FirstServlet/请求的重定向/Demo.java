@@ -22,7 +22,7 @@ public class Demo extends HttpServlet {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher(req.getContextPath() + "/flash");
         requestDispatcher.forward(req, resp);
 
-        
+//       todo resp中的细节  getWriter 和 outputStream 不能同时使用
 
     }
 }
