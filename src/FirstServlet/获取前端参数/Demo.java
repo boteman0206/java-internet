@@ -40,7 +40,7 @@ public class Demo extends HttpServlet {
 //            System.out.println(Arrays.toString(entry.getValue()));
 //        }
 
-        // TODO: 2019/11/30 使用流读取文件的时候参数必须是 x-www-form-urlencoded
+        // TODO: 2019/11/30 使用流读取文件的时候参数必须是 使用post提交 x-www-form-urlencoded
         ServletInputStream inputStream = req.getInputStream();
         byte[] buff = new byte[1024];
         int len = 0;
